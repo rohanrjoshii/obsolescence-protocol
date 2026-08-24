@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Endacopia (Andy Land) Muted Claymation & Dark Parchment Palette */
+body {
+  background-color: #0f0f13;
+  color: #f4f1de;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Space Mono', monospace, sans-serif;
+}
+
+/* Endacopia Muted Claymation Card & Window Styles */
+.endacopia-clay-card {
+  background-color: #1a1a22;
+  border: 2px solid #363545;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px 0px #0a0a0d, 8px 8px 0px 0px #242330;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.endacopia-clay-card:hover {
+  transform: translateY(-2px);
+  border-color: #d4a373;
+  box-shadow: 6px 6px 0px 0px #0a0a0d, 10px 10px 0px 0px #d4a373;
+}
+
+.endacopia-clay-button {
+  background-color: #2b2a36;
+  color: #f4f1de;
+  font-weight: 700;
+  border: 2px solid #4a485c;
+  border-radius: 6px;
+  box-shadow: 2px 2px 0px #000000;
+  transition: all 0.15s ease;
+}
+
+.endacopia-clay-button:hover {
+  background-color: #d4a373;
+  color: #0f0f13;
+  border-color: #f4f1de;
+  transform: translateY(-1px);
+}
+
+.endacopia-clay-button:active {
+  transform: translateY(1px);
+  box-shadow: 0px 0px 0px #000;
+}
+
+/* Classic Windows / Endacopia Retro Inset & Outset Bevels */
+.win-bevel-outset {
+  border-top: 2px solid #4a485c;
+  border-left: 2px solid #4a485c;
+  border-right: 2px solid #121216;
+  border-bottom: 2px solid #121216;
+  box-shadow: 1px 1px 0px 0px #000000;
+}
+
+.win-bevel-inset {
+  border-top: 2px solid #121216;
+  border-left: 2px solid #121216;
+  border-right: 2px solid #4a485c;
+  border-bottom: 2px solid #4a485c;
+}
+
+.win-bevel-button {
+  background-color: #2b2a36;
+  color: #f4f1de;
+  border-top: 2px solid #4a485c;
+  border-left: 2px solid #4a485c;
+  border-right: 2px solid #121216;
+  border-bottom: 2px solid #121216;
+}
+
+.win-bevel-button:active {
+  border-top: 2px solid #121216;
+  border-left: 2px solid #121216;
+  border-right: 2px solid #4a485c;
+  border-bottom: 2px solid #4a485c;
+}
+
+/* CRT Scanline Overlay */
+.crt-scanlines {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
