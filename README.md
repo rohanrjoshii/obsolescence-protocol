@@ -1,170 +1,93 @@
-# Personal Life API 🖥️
+# OBSOLESCENCE PROTOCOL 🖥️
+> **A full-stack retro-brutalist personal life-logging operating system & telemetry dashboard.**
 
-A unified API endpoint that aggregates your digital life data from various sources into a structured feed with a retro-brutalist Windows 95-inspired UI.
+[![GitHub Repo](https://img.shields.io/badge/GitHub-rohanrjoshii%2Fobsolescence--protocol-00ff00?style=for-the-badge&logo=github)](https://github.com/rohanrjoshii/obsolescence-protocol)
+[![React 18](https://img.shields.io/badge/React-18.3.1-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-20_LTS-green?style=for-the-badge&logo=node.js)](https://nodejs.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.4-purple?style=for-the-badge&logo=vite)](https://vitejs.org/)
+[![Three.js](https://img.shields.io/badge/Three.js-3D_CRT-orange?style=for-the-badge&logo=three.js)](https://threejs.org/)
 
-## 🎨 Design System: OBSOLESCENCE PROTOCOL
+---
 
-A dark, glitchy, retro-futuristic interface inspired by:
-- Windows 95 / PC-98 aesthetics
-- Digital archaeology and haunted software
-- Terminal green & toxic magenta color palette
-- CRT scanlines and glitch effects
-- 3D beveled windows
+## 📸 System Previews (Real Browser Telemetry)
 
-## Features
+### 1. Main Dashboard & Live Telemetry Stream
+![Obsolescence Protocol Dashboard](docs/screenshot_dashboard.png)
 
-- 📊 **GitHub Activity**: Commits, PRs, issues, branch creation
-- 💪 **Workout Data**: Strava, Fitbit support
-- 😴 **Sleep Tracking**: Oura Ring integration
-- 🎵 **Music Listening**: Spotify recently played
-- ⏱️ **Time Tracking**: RescueTime productivity data
-- 🔄 **Unified Feed**: All data merged into a chronological timeline
-- 🎮 **Retro UI**: Complete Win95-style interface with glitch effects
+### 2. Developer Dossier & Algorithmic Benchmarks (Rohan Joshi)
+![Developer Dossier](docs/screenshot_dossier.png)
+
+### 3. BIOS Splash Kernel Bootloader
+![BIOS Splash Bootloader](docs/screenshot_boot.png)
+
+---
+
+## 🎨 Design Philosophy & Architecture
+
+The **OBSOLESCENCE PROTOCOL** is engineered to bridge real-time developer activity with a 1995 MS-DOS / Windows 95 / Endacopia claymorphic aesthetic powered by WebGL CRT shaders and mechanical audio feedback:
+
+* **Windows 95 + Claymorphism**: Classic navy blue titlebars (`#000080`), grey window chrome (`#c0c0c0`), and earthy Endacopia clay cards (sand `#d4a373`, sage `#81b29a`, terracotta `#e07a5f`, charcoal `#242330`).
+* **True 64px Downsampled Hardware Pixelation**: Album covers and visual media are physically downsampled to a 64×64 pixel canvas and scaled via `transform: scale(3.5)` with `imageRendering: 'pixelated'` and a 5-stage green phosphor filter chain.
+* **Mechanical Typewriter Machine Logic**: Dynamic logs, commit messages, and directives mechanically stream character-by-character while window borders remain static.
+* **Curated Visual Hierarchy**: Single-line collapsible accordions for feed logs, expanded negative space (`gap-8`), and tabbed workspace routing (`[LIVE FEED]`, `[DAEMON & METRICS]`, `[DEV DOSSIER]`, `[ALL MODULES]`).
+
+---
+
+## ⚡ Key Features
+
+* 📊 **Multi-Source Telemetry Reverse Gateway**: In-memory 180s TTL cache with fault-isolated parallel ingestion for GitHub commits, LeetCode benchmarks, Strava cycling sessions, Oura sleep cycles, and Spotify/YouTube audio streams.
+* 🎵 **Off-Screen YouTube Audio Engine**: 16 curated studio masters (Daft Punk, The Weeknd, Kanye West, Cigarettes After Sex, Kavinsky, HOME, GUNSHIP, Harry Styles) on a retro iPod Classic with Three.js 3D CRT wireframe visualizer.
+* 💻 **CMD.EXE Command Interpreter**: Interactive terminal prompt with history, arrow-key navigation, and 20+ commands (`neofetch`, `play <track>`, `cat resume.txt`, `boot`, `ping`, `stats`, `directives`, `memory`, `matrix`).
+* 🔒 **PGP Secure Relay Transmitter**: Matrix-encrypted recruiter dispatch client with a 1.5-second cryptographic cipher scrambling animation.
+* 📅 **24-Hour Daemon Cron Schedule**: 12-column tabular routine resembling a Linux `htop`/cron daemon monitor with live pulsing `[ACTIVE]` and `[ OK ]` tags.
+* 📈 **Macro Odometer Registers (`0x70`–`0x75`)**: Real-time counter tracking lifetime commits, distance cycled, code hours, and papers read.
+
+---
 
 ## 🚀 Quick Start
 
-### Backend Setup
+### 1. Clone Repository
 ```bash
-# Install dependencies
+git clone https://github.com/rohanrjoshii/obsolescence-protocol.git
+cd obsolescence-protocol
+```
+
+### 2. Run Reverse Gateway Backend
+```bash
+# Install backend dependencies
 npm install
 
-# Configure API tokens
-cp .env.example .env
-# Edit .env with your tokens (see API Setup below)
-
-# Run backend
+# Start Express Gateway (Port 3000)
 npm run dev
 ```
 
-Backend runs on: **http://localhost:3000**
-
-### Frontend Setup
+### 3. Run Retro OS Frontend
 ```bash
+# Navigate to frontend
 cd frontend
 
-# Install dependencies  
+# Install frontend dependencies
 npm install
 
-# Run frontend
+# Launch Vite Dev Server (Port 5173)
 npm run dev
 ```
 
-Frontend runs on: **http://localhost:5173** 👈 Open this!
+Open **`http://localhost:5173`** in Google Chrome or any modern browser!
 
-## 🔑 API Setup
+---
 
-### ✅ GitHub (Working!)
-1. Go to https://github.com/settings/tokens
-2. Generate new token (classic)
-3. Select scopes: `repo`, `user`
-4. Copy token to `.env`:
-   ```
-   GITHUB_TOKEN=github_pat_your_token
-   GITHUB_USERNAME=your_username
-   ```
+## 👤 Developer Credentials
 
-### 🎵 Spotify (Needs Scope Fix)
+* **Name:** Rohan Joshi
+* **Location:** Bengaluru, Karnataka
+* **Education:** BCA @ PES University, Bengaluru (2023 – 2026)
+* **Production Role:** Software Developer Intern @ India Christian Matrimony (ICM)
+* **GitHub:** [@rohanrjoshii](https://github.com/rohanrjoshii)
+* **LinkedIn:** [@rohanrj1008](https://linkedin.com/in/rohanrj1008)
+* **LeetCode:** [@Rohan2502](https://leetcode.com/u/Rohan2502/)
 
-**Issue**: Your token has insufficient permissions.
+---
 
-**Quick Fix** (30 seconds):
-1. Visit https://developer.spotify.com/console/get-recently-played/
-2. Click **"GET TOKEN"**
-3. Check scope: `user-read-recently-played`
-4. Copy token to `.env`
-5. Backend will auto-restart
-
-See [SPOTIFY_SETUP.md](./SPOTIFY_SETUP.md) for detailed instructions.
-
-### 💪 Strava (Optional)
-1. Create app at https://www.strava.com/settings/api
-2. Get access token
-3. Add to `.env`: `STRAVA_ACCESS_TOKEN=your_token`
-
-### 😴 Oura Ring (Optional)
-1. Get token at https://cloud.ouraring.com/personal-access-tokens
-2. Add to `.env`: `OURA_ACCESS_TOKEN=your_token`
-
-### ⏱️ RescueTime (Optional)
-1. Get API key at https://www.rescuetime.com/anapi/manage
-2. Add to `.env`: `RESCUETIME_API_KEY=your_key`
-
-## 📡 API Endpoints
-
-### `GET /api/feed`
-Get your unified life feed
-
-**Query Parameters:**
-- `from`: Start date (ISO 8601)
-- `to`: End date (ISO 8601)  
-- `sources`: Comma-separated (e.g., `github,music`)
-- `limit`: Max items (default: 100)
-
-**Example:**
-```bash
-curl "http://localhost:3000/api/feed?from=2026-08-01&limit=20"
-```
-
-### `GET /api/sources`
-List all data sources and their status
-
-### `GET /api/sources/:source`
-Get data from a specific source
-
-## 🎨 UI Features
-
-- ✅ Win95 3D beveled windows
-- ✅ Glitch text with chromatic aberration
-- ✅ CRT scanlines overlay
-- ✅ WebGL animated background shader
-- ✅ Dithering patterns
-- ✅ Terminal-style command inputs
-- ✅ Staggered window layouts
-- ✅ Date range picker (7, 30, 90 days)
-- ✅ Auto-refresh every 5 minutes
-- ✅ Fully responsive
-
-## 🐛 Current Status
-
-| Source | Status | Notes |
-|--------|--------|-------|
-| GitHub | ✅ Working | Showing commits & events |
-| Spotify | ⚠️ Scope Issue | Token needs `user-read-recently-played` |
-| Strava | ❌ Not Configured | Add token to enable |
-| Oura | ❌ Not Configured | Add token to enable |
-| RescueTime | ❌ Not Configured | Add token to enable |
-
-## 📝 Next Steps
-
-1. **Fix Spotify**: Get new token with proper scope (see SPOTIFY_SETUP.md)
-2. **Add More Sources**: Configure Strava, Oura, RescueTime
-3. **Customize**: Adjust date ranges, add filters
-4. **Extend**: Add more data sources or custom integrations
-
-## 🎯 Example Response
-
-```json
-{
-  "feed": [
-    {
-      "id": "github-17503976902",
-      "type": "commit",
-      "source": "github",
-      "timestamp": "2026-08-12T18:02:55.000Z",
-      "data": {
-        "repo": "rohanrjoshii/daily-activity",
-        "commits": 1,
-        "branch": "main"
-      }
-    }
-  ],
-  "meta": {
-    "total": 1,
-    "sources": ["github"]
-  }
-}
-```
-
-## License
-
-MIT
+## 📄 License
+MIT License © 2026 Rohan Joshi. All Rights Reserved.
