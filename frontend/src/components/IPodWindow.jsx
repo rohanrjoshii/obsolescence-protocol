@@ -3,6 +3,7 @@ import DraggableWindow from './DraggableWindow'
 import IPodCRTVisualizer from './IPodCRTVisualizer'
 import { TRACK_DB } from '../data/trackDatabase'
 import { soundFx } from '../utils/audio'
+import { getAssetUrl } from '../utils/assets'
 
 export default function IPodWindow({
   isOpen,
@@ -47,7 +48,7 @@ export default function IPodWindow({
         track_name: currentTrack.track_name || currentTrack.title || 'Live Stream Track',
         artist: currentTrack.artist || 'Featured Artist',
         album: currentTrack.album || 'Digital Audio Stream',
-        coverArt: currentTrack.coverArt || '/album_art.jpg',
+        coverArt: currentTrack.coverArt || getAssetUrl('album_art.jpg'),
         youtubeId: currentTrack.youtubeId || '5NV6Rdv1a3I', // default to Get Lucky
       }
       setPlaylist((prev) => [newTrack, ...prev])

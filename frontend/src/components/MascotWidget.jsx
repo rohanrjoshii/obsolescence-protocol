@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import DraggableWindow from './DraggableWindow'
 import { soundFx } from '../utils/audio'
+import { getAssetUrl } from '../utils/assets'
 
 const OVERSEER_QUOTES = [
   'TIP: Press ⌘K (or Ctrl+K) to open the Command Palette.',
@@ -113,7 +114,7 @@ export default function MascotWidget({
           title="THE OVERSEER Mascot - Click to Interrogate"
         >
           <img
-            src="/overseer.jpg"
+            src={getAssetUrl('overseer.jpg')}
             alt="THE OVERSEER Mascot"
             className="w-full h-full object-cover rounded"
           />
@@ -138,7 +139,7 @@ export default function MascotWidget({
             <div className="flex gap-4 items-center border-b border-[#363545] pb-3">
               <div className="w-16 h-16 min-w-[64px] max-w-[64px] border-2 border-[#d4a373] bg-black overflow-hidden flex-shrink-0 rounded">
                 <img
-                  src="/overseer.jpg"
+                  src={getAssetUrl('overseer.jpg')}
                   alt="Overseer"
                   className="w-full h-full object-cover"
                 />
