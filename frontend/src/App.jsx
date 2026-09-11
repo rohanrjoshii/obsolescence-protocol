@@ -7,7 +7,7 @@ import FeedWindow from './components/FeedWindow'
 import TerminalWindow from './components/TerminalWindow'
 import StatsWindow from './components/StatsWindow'
 import SourceManagerWindow from './components/SourceManagerWindow'
-import IPodWindow from './components/IPodWindow'
+import IPodClassic from './components/IPodClassic'
 import MascotWidget from './components/MascotWidget'
 import CommandPalette from './components/CommandPalette'
 import ProfileWindow from './components/ProfileWindow'
@@ -445,13 +445,9 @@ function App() {
         onRefreshSources={loadSources}
       />
 
-      <IPodWindow
+      <IPodClassic
         isOpen={windowStates.ipod.isOpen}
-        isMinimized={windowStates.ipod.isMinimized}
-        onClose={closeWindow}
-        onMinimize={minimizeWindow}
-        onFocus={focusWindow}
-        zIndex={windowStates.ipod.zIndex}
+        onClose={() => closeWindow('ipod')}
         currentTrack={selectedIPodTrack}
       />
 
