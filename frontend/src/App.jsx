@@ -93,7 +93,7 @@ function App() {
         return
       }
 
-      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return
+      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target?.tagName)) return
       if (showCommandPalette) return
 
       if (e.key === 't' || e.key === 'T') {
